@@ -1,8 +1,6 @@
 import random
 import math
 
-teams = {}
-
 def expected_score(team1_rating, team2_rating):
    expected_score = 1/(1+10**((team2_rating-team1_rating)/400))
    return expected_score
@@ -12,7 +10,7 @@ def draw_probability(team1_rating, team2_rating):
     draw_prob = 0.3*math.exp(-elo_diff/400)
     return draw_prob
 
-def find_winner(team1, team2):
+def find_winner(team1, team2, teams):
      exp_score = expected_score(team1_rating = teams[team1], team2_rating=teams[team2])
      draw_prob = draw_probability(team1_rating=teams[team1], team2_rating=teams[team2])
      team1_win_prob = exp_score - draw_prob/2
