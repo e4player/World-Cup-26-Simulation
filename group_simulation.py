@@ -15,6 +15,10 @@ def update_standings(result, team1_stats, team2_stats):
     else:
         team1_stats['points'] += 0.5
         team2_stats['points'] += 0.5
+
+def create_leaderboard(group):
+    leaderboard = sorted(group, key = lambda x : x['points'], reverse = True)
+    return leaderboard
     
 def simulate_group(groups, group_name):
     group_info = groups[group_name]
@@ -24,3 +28,4 @@ def simulate_group(groups, group_name):
             team2_stats = group_info[j]
             result = one_match_simulation.find_winner(team1_stats, team2_stats)
             update_standings(result, team1_stats, team2_stats)
+    return create_leaderboard(group_info)
