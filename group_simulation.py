@@ -15,13 +15,12 @@ def update_standings(result, team1_stats, team2_stats):
     else:
         team1_stats['points'] += 0.5
         team2_stats['points'] += 0.5
-
-
-def simulate_group(groups):
-    for group_name, teams_info in groups.items():
-       for i in range(3):
-            for j in range(i+1,4):
-                  team1_stats = teams_info[i]
-                  team2_stats = teams_info[j]
-                  result = one_match_simulation.find_winner(team1_stats, team2_stats)
-                  update_standings(result, team1_stats, team2_stats)
+    
+def simulate_group(groups, group_name):
+    group_info = groups[group_name]
+    for i in range(3):
+        for j in range(i+1,4):
+            team1_stats = group_info[i]
+            team2_stats = group_info[j]
+            result = one_match_simulation.find_winner(team1_stats, team2_stats)
+            update_standings(result, team1_stats, team2_stats)
