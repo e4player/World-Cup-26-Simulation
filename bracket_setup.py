@@ -1,20 +1,20 @@
 def create_bracket(groups, third_teams_order, third_place_qualifiers):
     round_of_32 = [
     [get_second_place_team(groups, 'A'), get_second_place_team(groups, 'B')],
-    [get_group_winner(groups, 'E'),"third team"],
     [get_group_winner(groups, 'F'), get_second_place_team(groups, 'C')],
-    [get_group_winner(groups, 'C'), get_second_place_team(groups, 'F')],
+    [get_group_winner(groups, 'E'),"third team"],
     [get_group_winner(groups, 'I'),"third team"],
+    [get_second_place_team(groups, 'K'), get_second_place_team(groups, 'L')],
+    [get_group_winner(groups, 'H'), get_second_place_team(groups, 'J')],
+    [get_group_winner(groups, 'D'),"third team"],
+    [get_group_winner(groups, 'G'),"third team"],
+    [get_group_winner(groups, 'C'), get_second_place_team(groups, 'F')],
     [get_second_place_team(groups, 'E'), get_second_place_team(groups, 'I')],
     [get_group_winner(groups, 'A'),"third team"],
     [get_group_winner(groups, 'L'),"third team"],
-    [get_group_winner(groups, 'D'),"third team"],
-    [get_group_winner(groups, 'G'),"third team"],
-    [get_second_place_team(groups, 'K'), get_second_place_team(groups, 'L')],
-    [get_group_winner(groups, 'H'), get_second_place_team(groups, 'J')],
     [get_group_winner(groups, 'B'),"third team"],
-    [get_group_winner(groups, 'J'), get_second_place_team(groups, 'H')],
     [get_group_winner(groups, 'K'),"third team"],
+    [get_group_winner(groups, 'J'), get_second_place_team(groups, 'H')],
     [get_second_place_team(groups, 'D'), get_second_place_team(groups, 'G')]
     ]
 
