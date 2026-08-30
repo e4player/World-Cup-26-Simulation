@@ -9,7 +9,7 @@ def matchups_to_teams_list(matchups):
 
 def simulate_knockouts(teams_list):
     if len(teams_list) == 1:
-        return f"The Winner is {teams_list[0]['team']}"
+        return teams_list[0]['team']
     winners = []
     
     for i in range(0, len(teams_list), 2):
