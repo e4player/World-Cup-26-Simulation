@@ -6,7 +6,7 @@ In the recent World Cup 2026, FIFA expanded their format to include 48 teams for
 
 ## Features
 
-- Elo-based match simulation: Uses team Elo ratings (derived from official FIFA rankings) to calculate expected game outcomes.
+- Elo-based match simulation: Uses team Elo ratings (derived from official FIFA rankings and generated for simulation purposes) to calculate expected game outcomes.
 - Draw probability model: Incorporates the likelihood of a draw based on the difference between teams' Elo ratings.
 - 48-team group stage: Simulates all group-stage matches identical to the WC '26 and calculates standings.
 - Group-stage tiebreakers: Resolves tied teams differently from the WC by using playoff matches and performance-based tiebreakers.
